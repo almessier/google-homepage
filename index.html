@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Google</title>
+        <style>
+            * {
+                margin: 0;
+            }
+            html, body {
+                height: 100%;
+            }
+            ul, li {
+                display: inline
+            }
+            a {
+                color: black;
+            }
+            a:link {
+                text-decoration: none;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+            input {
+                width: 575px;
+                padding: 12px 20px;
+                margin: 20px auto;
+                display: block;
+                box-sizing: border-box;
+                border-radius: 20px;
+            }
+            input[type=text]:hover {
+                border: 6px solid #b3b3b3;
+            }
+            .left {
+                float: left;
+            }
+            .right {
+                float: right;
+            }
+            .left, .right {
+                padding: 12px;
+            }
+            .search-button {
+                background-color: #f2f2f2;
+                border: none;
+                color: #696969;
+                padding: 9px 16px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 14px;
+                border-radius: 2px;
+            }
+            .g-apps {
+                background-image: url(https://ssl.gstatic.com/gb/images/i1_1967ca6a.png);
+                background-size: 528px 68px;
+                background-position: -132px -38px;
+                border: none;
+                opacity: .55;
+                display: inline-block;
+                text-decoration: none;
+                outline: none;
+                vertical-align: middle;
+                border-radius: 2px;
+                height: 30px;
+                width: 30px;
+            }
+            .g-apps:hover {
+                color: black;
+            }
+            .site-container {
+                min-height: 100%;
+                margin-bottom: -40px; 
+            }
+            .site-container:after {
+                content: "";
+                display: block;
+                }
+            .site-footer, .site-container:after {
+                height: 40px; 
+                }
+            .site-footer {
+                background: #f2f2f2;
+                position: fixed;
+                width: 100%;
+            }
+            #imglogo {
+                margin: 195px auto 0 auto;
+                display: block;
+            }
+            #sign-in-button {
+                background-color: #4d88ff;
+                border: none;
+                color: #696969;
+                padding: 6px 12px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 14px;
+                border-radius: 2px;
+            }
+            #sign-in-text {
+                color: white
+            }
+            #sign-in-text:hover {
+                text-decoration: none !important;
+            }
+        </style>
+    </head>
+    <body>
+        <div class = "site-container">
+            <header>
+                <ul>
+                    <li class = "left"><a href = "about">About</a></li>
+                    <li class = "left"><a href = "store">Store</a></li>
+                    <li class = "right"><button name = "sign-in" type = "button" id = "sign-in-button"><a href = "sign-in" id = "sign-in-text"><b>Sign In</b></a></button></li>
+                    <li class = "right"><button name = "google-apps" type = "button"><a href = "apps" class="g-apps"></a></button></li>
+                    <li class = "right"><a href = "images">Images</a></li>
+                    <li class = "right"><a href = "gmail">Gmail</a></li>
+                </ul>
+            </header>
+                <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt = "Google" id = "imglogo">
+                    <form>
+                        <input type = "text">
+                        <center>
+                            <button name = "google-search" type = "button" class = "search-button">Google Search</button>
+                            <button name = "im-feeling-lucky" type = "button" class = "search-button">I'm Feeling Lucky</button>
+                        </center>
+                    </form>
+        </div>
+        <footer class = "site-footer">
+            <ul>
+                <li class = "left"><a href = "advertising">Advertising</a></li>
+                <li class = "left"><a href = "business">Business</a></li>
+                <li class = "left"><a href = "how-search-works">How Search works</a></li>
+                <li class = "right"><a href = "settings">Settings</a></li>
+                <li class = "right"><a href = "terms">Terms</a></li>
+                <li class = "right"><a href = "privacy">Privacy</a></li>
+            </ul>
+        </footer>
+    </body>
+</html>
