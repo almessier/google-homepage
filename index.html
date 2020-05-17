@@ -13,7 +13,7 @@
                 display: inline
             }
             a {
-                color: black;
+                color: #5f6368;
             }
             a:link {
                 text-decoration: none;
@@ -30,13 +30,33 @@
                 border-radius: 20px;
             }
             input[type=text]:hover {
-                border: 6px solid #b3b3b3;
+                border: 1px solid #b3b3b3;
+            }
+            center {
+                display: block;
+                text-align: center;
+            }
+            .headertext {
+                font-family: arial,sans-serif;
+                font-size: 13px;
+            }
+            .footertext {
+                font-family: arial,sans-serif;
+                font-size: 14px;
             }
             .left {
                 float: left;
             }
             .right {
                 float: right;
+            }
+            .g-apps-positioning {
+                float: right;
+                padding: 7px;
+            }
+            .sign-in-positioning {
+                float: right;
+                padding: 9px;
             }
             .left, .right {
                 padding: 12px;
@@ -51,6 +71,12 @@
                 display: inline-block;
                 font-size: 14px;
                 border-radius: 2px;
+            }
+            .search-button:hover {
+                color: black;
+                border: solid;
+                border-width: 1px;
+                border-color: #b3b3b3;
             }
             .g-apps {
                 background-image: url(https://ssl.gstatic.com/gb/images/i1_1967ca6a.png);
@@ -67,7 +93,7 @@
                 width: 30px;
             }
             .g-apps:hover {
-                color: black;
+                opacity: .85;
             }
             .site-container {
                 min-height: 100%;
@@ -100,6 +126,10 @@
                 font-size: 14px;
                 border-radius: 2px;
             }
+            #sign-in-button:cursor {
+                background-color: #0055ff;
+
+            }
             #sign-in-text {
                 color: white
             }
@@ -109,13 +139,13 @@
         </style>
     </head>
     <body>
-        <div class = "site-container">
+        <div class = "site-container headertext">
             <header>
                 <ul>
                     <li class = "left"><a href = "about">About</a></li>
                     <li class = "left"><a href = "store">Store</a></li>
-                    <li class = "right"><button name = "sign-in" type = "button" id = "sign-in-button"><a href = "sign-in" id = "sign-in-text"><b>Sign In</b></a></button></li>
-                    <li class = "right"><button name = "google-apps" type = "button"><a href = "apps" class="g-apps"></a></button></li>
+                    <li class = "sign-in-positioning"><button name = "sign-in" type = "button" id = "sign-in-button"><a href = "sign-in" id = "sign-in-text"><b>Sign In</b></a></button></li>
+                    <li class = "g-apps-positioning"><a href = "apps" class="g-apps" title = "Google apps" role = "button"></a></li>
                     <li class = "right"><a href = "images">Images</a></li>
                     <li class = "right"><a href = "gmail">Gmail</a></li>
                 </ul>
@@ -129,7 +159,7 @@
                         </center>
                     </form>
         </div>
-        <footer class = "site-footer">
+        <footer class = "site-footer footertext">
             <ul>
                 <li class = "left"><a href = "advertising">Advertising</a></li>
                 <li class = "left"><a href = "business">Business</a></li>
